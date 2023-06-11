@@ -22,13 +22,13 @@
             <nav class="header-navigation">
                 <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
                 <ul class="header-list list">
-                    <li>
-                        <a class="link-menu link" href="./index.html">Studio</a>
+                    <li class="menu">
+                        <a class="link-menu link active" href="./index.html">Studio</a>
                     </li>
-                    <li>
+                    <li class="menu">
                         <a class="link-menu link" href="./portfolio.html">Portfolio</a>
                     </li>
-                    <li>
+                    <li class="menu">
                         <a class="link-menu link" href="">Contacts</a>
                     </li>
                 </ul>
@@ -54,59 +54,59 @@
                     Effective Solutions
                     for Your Business
                 </h1>
-                <button class="button-studio" type="button">Order Service</button>
+                <button class="button-studio" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <section class="digital-container">
             <div class="container ">
                 <h2 class="digital-title visually-hidden"> Our Goals</h2>
-                    <ul class="list digital-element">
-                        <li class="digital-list">
-                            <div class="digital-icon">
-                                <svg width="64" height="64">
-                                    <use href="./images/icons.svg#icon-antenna" ></use>
-                                </svg>
-                            </div>
-                            <h3 class="title">Strategy</h3>
-                            <p class="digital-text">Our goal is to identify the business
-                                problem to walk away with the perfect and creative solution. </p>
-                        </li>
-                        <li class="digital-list">
-                            <div class="digital-icon">
-                                <svg width="64" height="64">
-                                    <use href="./images/icons.svg#icon-clock"></use>
-                                </svg>
-                            </div>
-                            <h3 class="title">Punctuality</h3>
-                            <p class="digital-text">Bring the key message to the brand's audience for the best price within
-                                the
-                                shortest possible
-                                time.</p>
-                        </li>
-                        <li class="digital-list">
-                            <div class="digital-icon">
-                                <svg width="64" height="64">
-                                    <use href="./images/icons.svg#icon-diagram"></use>
-                                </svg>
-                            </div>
-                            <h3 class="title">Diligence</h3>
-                            <p class="digital-text">Research and confirm brands that present the strongest digital growth
-                                opportunities and minimize
-                                risk.</p>
-                        </li>
-                        <li class="digital-list">
-                            <div class="digital-icon">
-                                <svg width="64" height="64">
-                                    <use href="./images/icons.svg#icon-astronaut"></use>
-                                </svg>
-                            </div>
-                            <h3 class="title">Technologies</h3>
-                            <p class="digital-text">Design practice focused on digital experiences. We bring forth a deep
-                                passion for
-                                problem-solving.</p>
-                        </li>
-                    </ul>
-                
+                <ul class="list digital-element">
+                    <li class="digital-list">
+                        <div class="digital-icon">
+                            <svg width="64" height="64">
+                                <use href="./images/icons.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Strategy</h3>
+                        <p class="digital-text">Our goal is to identify the business
+                            problem to walk away with the perfect and creative solution. </p>
+                    </li>
+                    <li class="digital-list">
+                        <div class="digital-icon">
+                            <svg width="64" height="64">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Punctuality</h3>
+                        <p class="digital-text">Bring the key message to the brand's audience for the best price within
+                            the
+                            shortest possible
+                            time.</p>
+                    </li>
+                    <li class="digital-list">
+                        <div class="digital-icon">
+                            <svg width="64" height="64">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Diligence</h3>
+                        <p class="digital-text">Research and confirm brands that present the strongest digital growth
+                            opportunities and minimize
+                            risk.</p>
+                    </li>
+                    <li class="digital-list">
+                        <div class="digital-icon">
+                            <svg width="64" height="64">
+                                <use href="./images/icons.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Technologies</h3>
+                        <p class="digital-text">Design practice focused on digital experiences. We bring forth a deep
+                            passion for
+                            problem-solving.</p>
+                    </li>
+                </ul>
+
             </div>
         </section>
         <section class="applications-cotainer">
@@ -291,7 +291,7 @@
                 <ul class="customers-list list">
                     <li class="customers-item">
                         <a class="customers-link link" href="">
-                            <svg class="customers-icon" width="104" height="56" >
+                            <svg class="customers-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-yaco"></use>
                             </svg>
                         </a>
@@ -380,7 +380,16 @@
             </div>
         </div>
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal" >
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
